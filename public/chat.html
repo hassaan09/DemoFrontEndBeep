@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Sidebar Section -->
+        <div class="chat-sidebar">
+            <div class="chat-header">
+                <h3>Beep</h3>
+                <div class="chat-icons">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <input type="text" placeholder="Search or start new chat" class="chat-search">
+            <div class="chat-list">
+                <!-- Chat Items will be dynamically populated -->
+            </div>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <div class="chat-topbar">
+                <div class="chat-user">
+                    <img id="profilePic" src="images/default-profile.png" alt="User">
+                    <p id="username"></p>
+                </div>
+                <div class="chat-icons">
+                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-video"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="chat-messages">
+                <!-- Messages will be dynamically populated -->
+            </div>
+            <div class="chat-input">
+                <i class="fas fa-smile"></i>
+                <i class="fas fa-paperclip"></i>
+                <input type="text" placeholder="Type a message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/scripts.js"></script>
+</html>
